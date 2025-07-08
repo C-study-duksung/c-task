@@ -1,4 +1,4 @@
-#include <stuio.h>
+#include <studio.h>
 
 int main(void){
     int i;
