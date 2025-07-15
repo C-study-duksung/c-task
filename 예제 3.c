@@ -17,6 +17,7 @@ int main() {
         (num1 <= num2 && num2 <= num3) || (num3 <= num2 && num2 <= num1) ? num2 :
         num3;
 
+    // num1, num2, num3 중 중간값 출력
     printf("%d \n", result);
 
     return 0;
