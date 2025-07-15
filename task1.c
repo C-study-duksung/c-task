@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int main(void){
-    int i;
-    i = 0;
-    printf("%d", i);
+// Hello World! 출력 without 입력
+
+int main(){
+
+    printf("Hello World!");
 
     return 0;
+
 }
