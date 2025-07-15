@@ -1,6 +1,6 @@
 # include <stdio.h>
 
-// 입력 받은 세 정수 중 중간값 출력 with 조건 연산자
+// 입력 받은 세 정수 중 중간값 출력 with 조건 연산자 / without 입력
 
 int main() {
 
