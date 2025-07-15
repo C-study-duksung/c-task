@@ -12,7 +12,18 @@ int main() {
     scanf("%d %d %d", &num1, &num2, &num3);
 
     // 조건 연산자 이용
-    /* 
+    result =
+        (num2 <= num1 && num1 <= num3) || (num3 <= num1 && num1 <= num2) ? num1 :
+        (num1 <= num2 && num2 <= num3) || (num3 <= num2 && num2 <= num1) ? num2 :
+        num3;
+
+    printf("%d \n", result);
+
+    return 0;
+
+}
+
+/* 
     1. 조건 연산자
        [조건] ? [참] : [거짓]
     2. num1 <= num2 <= num3 안 됨 
@@ -24,14 +35,4 @@ int main() {
                  == 참 1
     3. && 역할: 피연산자가 모두 참이면 true 반환 [and 의미]
     4. || 역할: 피연산자 중 하나라도 참이면 true 반환 [or 의미]
-    */
-    result =
-        (num2 <= num1 && num1 <= num3) || (num3 <= num1 && num1 <= num2) ? num1 :
-        (num1 <= num2 && num2 <= num3) || (num3 <= num2 && num2 <= num1) ? num2 :
-        num3;
-
-    printf("%d \n", result);
-
-    return 0;
-
-}
+*/
