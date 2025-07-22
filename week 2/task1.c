@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// 점수 입력 받으면 학점 출력
+// 점수 입력 => 학점 출력
 
 int main(void){
 
