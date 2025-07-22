@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// test
+// test test
 // 몇 줄까지 만들건지 정수 입력 => 별 출력
 // 정수(N) 1 이상 100 이하
 
