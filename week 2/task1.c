@@ -8,16 +8,16 @@ int main(void){
     int num;
     
     // 점수 입력 받기
-    scanf("%d, &num");
+    scanf("%d", &num);
 
     // 입력 받은 점수에 따른 학점 판별 조건문
-    if(90 <= num <= 100)
+    if(90 <= num && num <= 100)
         printf("A");
-    else if(80 <= num <= 89)
+    else if(80 <= num && num <= 89)
         printf("B");
-    else if(70 <= num < 79)
+    else if(70 <= num && num < 79)
         printf("C");
-    else if(60 <= num <= 69)
+    else if(60 <= num && num <= 69)
         printf("D");
     else
         printf("F");
