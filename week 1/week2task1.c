@@ -2,7 +2,7 @@
 
 // 점수 입력 받으면 학점 출력
 
-int main(void)){
+int main(void){
 
     // 점수 변수 선언
     int num;
