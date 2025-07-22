@@ -15,3 +15,6 @@ int main() {
     printf("%d\n", mid);
     return 0;
 }
+
+// ❌
+// 조건 연산자를 사용했어야하는데 if문을 사용했음
