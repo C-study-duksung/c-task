@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-// test test test
+// test
 // 몇 줄까지 만들건지 정수 입력 => 별 출력
 // 정수(N) 1 이상 100 이하
 
 int main(void){
 
     // 줄 선언
-    int N; 
+    int N;
 
     // 줄 변수 입력 받기
     scanf("%d", &N); // N = 5
