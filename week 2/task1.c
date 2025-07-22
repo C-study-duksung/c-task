@@ -22,6 +22,7 @@ int main(void){
     else
         printf("F");
 
+    return 0;
 
 }
 
