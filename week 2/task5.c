@@ -15,9 +15,9 @@ int main(void){
     // for 문 이용
     for(; N>0; N--) // N = 5 4 3 2 1
     { 
-        for(int i=0; i<N-1; i++) // a 개수만큼 공백 출력 
+        for(int i=0; i<N-1; i++) // i 개수만큼 공백 출력 -> i = 0 1 ... N-2 (총 N-1개 출력)
             printf(" ");
-        for(int j=5; j>N-1; j--) // N 개수만큼 * 출력
+        for(int j=N; j>N-1; j--) // j 개수만큼 * 출력 -> j = 
             printf("*");
         printf("\n");
     }
