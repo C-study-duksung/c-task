@@ -19,7 +19,7 @@ int main(void){
     { 
         for(i=0; i<N-1; i++) // i 개수만큼 공백 출력 -> i = 0 1 ... N-2 (총 N-1개 출력)
             printf(" ");
-        for(int j=0; j<N-i-1; j++) // j 개수만큼 * 출력 -> j = 0 1 ... N-i-2 (총 N-i-1개 출력)
+        for(int j=0; j<total-i; j++) // j 개수만큼 * 출력 -> j = 0 1 ... N-i-2 (총 N-i-1개 출력)
             printf("*");
         printf("\n");
     }
