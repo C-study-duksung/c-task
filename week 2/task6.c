@@ -7,10 +7,13 @@ int main(void) {
 
     // 자연수 변수 선언
     int M, N;
+    int b;
 
     // 자연수 변수 입력 받기
     // 1 <= M <= N <= 1,000,000 아닐 경우, 다시 입력 받기
     M = 0, N = 0;
+    b=0;
+
     while (M < 1 || M > N || N > 1000000)
         scanf_s("%d %d", &M, &N);
 
@@ -18,13 +21,15 @@ int main(void) {
     printf("소수 \n");
     for (int i = M; i <= N; i++)
     {
-        for (int j=2; j<=i; j++)
+        for (int j=2; j<i; j++)
         {
             if (i % j == 0)
                break;
-            else if (i % j != 0){
+            else if (i % j != 0)
+               b = i;
+            if (i != b)
+            {
                printf("%d \n", i);
-               int a = 1;
                break;
             }
         }
@@ -70,7 +75,7 @@ int main(void) {
       break 쓰는 이유: i 중에서 2 ~ 1000000 중 하나인 j로 나누어 떨어짐 = 소수 아님 
 
    4. 중간 점검 (2)
-      실행 결과: 3 5 7 9 11 13 15 (3 16 대입)
+      실행 결과: 3 5 7 9 11 13 15 (3 16 대입)4 = 홀수 출력
       코드:
       for (int i = M; i <= N; i++)
       {
