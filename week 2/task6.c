@@ -3,21 +3,25 @@
 // 두 자연수 (M, N) 입력 => 입력받은 두 수 범위에 있는 소수 출력
 // 1 <= M <= N <= 1,000,000 자연수
 
-int main(void){
+int main(void) {
 
     // 자연수 변수 선언
     int M, N;
 
     // 자연수 변수 입력 받기
     // 1 <= M <= N <= 1,000,000 아닐 경우, 다시 입력 받기
-    M=0, N=0;
-    while (M < 1 || M > N || N > 1000000) 
-        scanf("%d %d", &M, &N);
+    M = 0, N = 0;
+    while (M < 1 || M > N || N > 1000000)
+        scanf_s("%d %d", &M, &N);
 
     // for 문 이용
-    for(int i=M; i=N; i++)
+    for (int i = M; i <= N; i++)
     {
-
+        for (int j=1; j<=i; j++) 
+        {
+            if (i % j != 0)
+                printf("%d은 소수", i);
+        }
 
     }
 
