@@ -31,7 +31,7 @@ int main(void)
         else if (b > a && b > c)
             money = b * 100;
         else  
-            money = c*100;
+            money = c * 100;
 
     // 상금 출력
     printf("%d", money);
@@ -39,6 +39,41 @@ int main(void)
     return 0;
 
 }
+
+/*
+    < 피드백 >
+    1. 정답 코드 max 사용
+       => 보통 많이 사용하는 방법은 아님
+       
+    2. max 찾기
+       => 코드
+       int att[5] = {1,2,3,4,5};
+       max = arr[0];
+       for(int i=0; i<5; i++){
+           if (arr[i]>max){
+               max=arr[i]}
+       }
+
+    2. min 찾기
+       => 코드
+       int att[5] = {1,2,3,4,5};
+       min = arr[0];
+       for(int i=0; i<5; i++){
+           if (arr[i]<max){
+               max=arr[i]}
+       }     
+
+    3. 포인터 max 찾기
+       => 코드
+       int att[5] = {1,2,3,4,5};
+       int *p;
+       max = arr[0];
+       for(int i=0; i<5; p++){
+           if (arr[i]>max){
+               max = *p;
+               max=arr[i}
+       }
+*/
 
 /*
     1. 좋은 코드를 짜는 사고 방식 전환 방법

@@ -16,7 +16,7 @@ int main(void){
     // 입력 받은 x좌표, y좌표에 따른 사분면 판별 조건문
     if(0 < xnum && xnum <= 1000 && 0 < ynum && ynum <= 1000)
         printf("1 \n");
-    else ifs(-1000 <= xnum && xnum < 0 && 0 < ynum && ynum <= 1000)
+    else if(-1000 <= xnum && xnum < 0 && 0 < ynum && ynum <= 1000)
         printf("2 \n");
     else if(-1000 <= xnum && xnum < 0 && -1000 <= ynum && ynum < 0)
         printf("3 \n");
@@ -26,6 +26,12 @@ int main(void){
     return 0;
 
 }
+
+/*
+    < 피드백 >
+    1. 조건문에서 조건 길게 쓰기 (X) 입력 자체를 조건 맞게 받기 (O)
+    2. 마지막에 break 하나 작성
+*/
 
 /*
     1. 제 4 사분면 판별할 때 else만 써도 괜찮은 거 같은데 맞는지

@@ -16,7 +16,7 @@ int main(void){
         printf("A");
     else if(80 <= num && num <= 89)
         printf("B");
-    else if(70 <= num && num < 79)
+    else if(70 <= num && num <= 79)
         printf("C");
     else if(60 <= num && num <= 69)
         printf("D");
@@ -26,6 +26,13 @@ int main(void){
     return 0;
 
 }
+
+/*
+    < 피드백 >
+    1. else i f(80 <= num && num <= 89)
+       => else if (80 <= num && num < 90)
+
+*/
 
 /* 
     1. 점수 조건에 따라 학점을 받는 변수 grade는 따로 설정할 필요 없는건지?
