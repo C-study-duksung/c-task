@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// 두 행렬 입력 => 행렬 합 출력
+// 두 행렬 입력 => 행렬 합 출력 
 
 int main(void){
 

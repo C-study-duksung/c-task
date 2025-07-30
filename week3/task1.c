@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// 시험 본 과목 수, 기존 점수 입력 => 조작된 점수 평균 출력
+// 시험 본 과목 수, 기존 점수 입력 => 조작된 점수 평균 출력 
 // 새로운 평균 구하는 함수 프로그램을 함수로 작성 / main 함수에서 출력
 // 점수 입력 시 공백으로 구분
 
@@ -77,6 +77,9 @@ float NewAverage(int n, float score[1000])
       조작된 점수를 기존 점수 배열에 넣는 것이 나을지 = 새로운 배열에 넣지 말고
 
    2. 질문 (2)
+      점수 입력 받을 때 0 이상 100 이하 조건 안 맞으면 다시 받아야 하는지
+      
+   3. 질문 (3)
       if (n < 0 || n > 1000){
             printf("다시 입력하세요. \n");
             float score[n]
@@ -84,7 +87,7 @@ float NewAverage(int n, float score[1000])
         }
        실행 오류 이유: ?
 
-   3. 중간 점검 (1)
+   4. 중간 점검 (1)
       결과
       코드
       float NewAverage(int subject, float num1, float num2, float num3)
@@ -106,7 +109,7 @@ float NewAverage(int n, float score[1000])
     return (sum/subject);
 }
 
-    4. 중간 점검 (2)
+    5. 중간 점검 (2)
        코드
        if (n < 0 || n > 1000){
             printf("다시 입력하세요. \n");
