@@ -2,8 +2,7 @@
 
 // 두 행렬 입력 => 행렬 합 출력
 
-int main(void)
-{
+int main(void){
 
     // 행렬 크기 (행 N / 열 M) 변수 선언
     int N, M;
