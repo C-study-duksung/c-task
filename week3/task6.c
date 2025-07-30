@@ -26,8 +26,8 @@ int main(void){
         int location[n][2];
 
         // 색종이 위치 입력 받기
-        printf("색종이 위치 입력 (색종이 하나 위치 입력 후 enter)" \n);
-        printf("(색종이 왼쪽 변~도화지 왼쪽 변 사이 거리 / 색종이 아래쪽 변~도화지 아래쪽 변 사이 거리)");
+        printf("색종이 위치 입력 (색종이 하나 위치 입력 후 enter)\n");
+        printf("(색종이 왼쪽 변~도화지 왼쪽 변 사이 거리 / 색종이 아래쪽 변~도화지 아래쪽 변 사이 거리)\n");
         for (int i=0; i<n; i++){
             for (int j=0; j<2; j++){
                 scanf("%d", &location[i][j]);
@@ -35,13 +35,15 @@ int main(void){
             }
 
         // 색종이 붙인 넓이 계산
-        total_sum = n * 10 * 10 // 각 색종이 넓이 합 계산
+        total_sum = n * 10 * 10; // 각 색종이 넓이 합 계산
 
         for (int i=0; i<n; i++){ // 색종이 겹친 넓이 합 계산
-            if ((-9 <= (location[i][0]-location[i+1][0]) && (location[i][0]-location[i+1][0]) <= 9) && (-9 <= (location[i][1]-location[i+1][1]) && (location[i][1]-location[i+1][1]) <= 9)){
-                overlapped_sum += (location[i][0]-location[i+1][0]) * (location[i][1]-location[i+1][1]);
-                if (overlapped_sum < 0){
-                    overlapped_sum = overlapped_sum * (-1) // 넓이를 양수로 만들기
+            for (int j=i+1; j<n; j++){
+                if ((-9 <= (location[i][0]-location[j][0]) && (location[i][0]-location[j][0]) <= 9) && (-9 <= (location[i][1]-location[j][1]) && (location[i][1]-location[j][1]) <= 9)){
+                    overlapped_sum += (location[i][0]-location[j][0]) * (location[i][1]-location[j][1]);
+                    if (overlapped_sum < 0){
+                        overlapped_sum = overlapped_sum * (-1); // 넓이를 양수로 만들기
+                    }
                 }
             }
         }
