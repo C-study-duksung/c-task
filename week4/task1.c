@@ -8,7 +8,6 @@ int main(void){
 
     // 변수 선언
     int num;
-    int DoubleNum;
     int *pnum;
     pnum = &num;
     
