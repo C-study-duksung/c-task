@@ -25,7 +25,7 @@ int main(void){
 }
 
 // 2배 증가 함수 정의
-int ChangeDouble(*pnum){
+int ChangeDouble(int *pnum){
 
     (*pnum) *= 2;
 
