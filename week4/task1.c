@@ -19,7 +19,7 @@ int main(void){
     // 2배 증가 함수 호출
     // void형 = 반환값 없음
     ChangeDouble(&num);
-    printf("%d", DoubleNum);
+    printf("%d", num);
 
     return 0;
 
