@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // 2배 증가 함수 선언
-void ChangeDouble(*pnum);
+void ChangeDouble(int *pnum);
 
 // main 함수
 int main(void){
