@@ -17,7 +17,7 @@ int main(void){
     scanf("%d", &num);
 
     // 2배 증가 함수 호출
-    DoubleNum = ChangeDouble(num);
+    DoubleNum = ChangeDouble(&num);
     printf("%d", DoubleNum);
 
     return 0;
@@ -28,7 +28,5 @@ int main(void){
 int ChangeDouble(*pnum){
 
     (*pnum) *= 2;
-
-    return *pnum;
 
 }
