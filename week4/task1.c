@@ -17,7 +17,8 @@ int main(void){
     scanf("%d", &num);
 
     // 2배 증가 함수 호출
-    DoubleNum = ChangeDouble(&num);
+    // void형 = 반환값 없음
+    ChangeDouble(&num);
     printf("%d", DoubleNum);
 
     return 0;
