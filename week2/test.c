@@ -18,4 +18,4 @@ int main(void)
     printf("끝");
 
     return 0;
-}
+} 
