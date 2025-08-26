@@ -35,12 +35,13 @@ int main(void){
 }
 
 /*
-
-    1) 중간 점검 (1)
+    1. 중간 점검 (1)
        실행 결과: 
        코드: a % b = r
        실행 결과 이유: a % b는 값
        문제점: 대입 받는 변수는 왼쪽에 위치
+    
+    2. long long int = long long
 
+    3. long long int 사용 시, %는 %lld로 써야 함
 */
-long long int = long long
