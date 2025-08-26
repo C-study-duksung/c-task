@@ -1,3 +1,46 @@
 #include <stdio.h>
 
 // 상
+// 두 수 입력 => 최소공배수 출력
+// 큰 수 입력에 대하여 변수를 64비트 정수로 선언하기 (C/C++에서는 long long int 사용 & Java에서는 long 사용)
+
+int main(void){
+
+    // 두 변수 선언
+    long long A, B;
+
+    // 두 변수 입력 받기
+    printf("두 변수 입력: ");
+    scanf("%lld %lld", &A, &B);
+
+    // 최대공약수(GCD) 구하기
+    // 유클리드 호제법 이용 (B가 0이 될 때까지 반복 & 마지막 a가 GCD)
+    long long a = A;
+    long long b = B;
+    long long r;
+
+    while (b != 0){
+        r = a % b;
+        a = b;
+        b = r;
+    }
+
+    // 최소공배수(LCM) 구하기 및 출력
+    // 최대공약수 이용
+    long long LCM = (A * B) / a;
+    printf("최소공배수: %lld", LCM);
+
+    return 0;
+
+}
+
+/*
+
+    1) 중간 점검 (1)
+       실행 결과: 
+       코드: a % b = r
+       실행 결과 이유: a % b는 값
+       문제점: 대입 받는 변수는 왼쪽에 위치
+
+*/
+long long int = long long
