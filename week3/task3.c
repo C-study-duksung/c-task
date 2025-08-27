@@ -53,3 +53,9 @@ int main(void){
     }
 
 }
+
+< 오류 >
+1. 
+
+< 피드백 >
+1. continue 하면 다시 처음으로 감 => while 안에 while 가능함
