@@ -42,5 +42,22 @@ LCM(A, B) = (A × B) / GCD
 #include <stdio.h>
 
 int main(void) {
-    
+    long long int A, B;
+    printf("두 정수 A와 B를 공백으로 분리하여 입력하세요: ");
+    scanf("%lld %lld", &A, &B);
+
+    long long int a = A;
+    long long int b = B;
+    long long int r;
+
+    while(b != 0) {
+        r = a % b;
+        a = b;
+        b = r;
+    }
+
+    long long int lcm = (A * B) / a;
+    printf("A와 B의 최소공배수: %lld\n", lcm);
+
+    return 0;
 }

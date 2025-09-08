@@ -8,6 +8,35 @@
 #include <stdio.h>
 
 int main(void) {
-  
+    int score;
+
+    while (1)
+    {
+        printf("시험 점수를 입력하세요 (0 ~ 100): ");
+        scanf("%d", &score);
+
+        if (score <= 0 || score >= 100) {
+            printf("0~100 사이의 점수를 입력하세요. \n");
+        } else {
+            if (score >= 90 && score <= 100) {
+                printf("A\n");
+                break;                
+            } else if (score >= 80 && score < 90) {
+                printf("B\n");
+                break;                
+            } else if (score >= 70 && score < 80) {
+                printf("C\n");
+                break;                
+            } else if (score >= 60 && score < 70) {
+                printf("D\n");
+                break;                
+            } else {
+                printf("F\n");
+                break;
+            }
+        }
+    }
+
+    return 0;
   
 }
